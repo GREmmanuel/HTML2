@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+form {
+    padding: 20px;
+    max-width: 800px;
+    margin: 80px auto 20px auto; /* Adjust margin to avoid overlapping with fixed header */
+}
+
+.question-group {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: orange;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.likert-scale {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likert-scale li {
+    display: inline-block;
+}
+
+button[type="button"] {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="button"]:hover {
+    background-color: darkorange;
+}
+
+button[type="button"].selected {
+    background-color: blue;
+}
+
+button[type="submit"] {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+#results {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}

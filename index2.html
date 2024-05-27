@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Am I? - Powered by UL Square</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>WHO AM I?</h1>
+        <p>Powered by UL Square</p>
+    </header>
+    <form id="personalityForm">
+        <!-- Energy Orientation (EO) -->
+        <div class="question-group">
+            <h2>Energy Orientation (EO)</h2>
+            <div class="question">
+                <label>1. I feel energized by spending time with others.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I prefer to work in groups rather than alone.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I find social gatherings exhausting and prefer quiet time.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I am usually the one to initiate conversations.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I often reflect on my thoughts and feelings.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Information Processing (IP) -->
+        <div class="question-group">
+            <h2>Information Processing (IP)</h2>
+            <div class="question">
+                <label>1. I prefer to focus on the facts and details.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I enjoy exploring ideas and possibilities.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I trust my experience over theoretical knowledge.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I often look for patterns and meanings beyond the obvious.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I rely on my five senses to understand the world.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Decision Making (DM) -->
+        <div class="question-group">
+            <h2>Decision Making (DM)</h2>
+            <div class="question">
+                <label>1. I make decisions based on logic and analysis.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I consider others' feelings when making decisions.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I prefer making decisions quickly.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I seek consensus and harmony when making decisions.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I prioritize objective criteria over personal values in decision making.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Lifestyle Preference (LP) -->
+        <div class="question-group">
+            <h2>Lifestyle Preference (LP)</h2>
+            <div class="question">
+                <label>1. I prefer a structured and organized lifestyle.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I am comfortable with last-minute changes and spontaneity.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I prefer to keep my options open rather than make a decision quickly.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I like to plan my activities in advance.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I thrive in an environment with clear rules and guidelines.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Am I? - Powered by UL Square</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>WHO AM I?</h1>
+        <p>Powered by UL Square</p>
+    </header>
+    <form id="personalityForm">
+        <!-- Energy Orientation (EO) -->
+        <div class="question-group">
+            <h2>Energy Orientation (EO)</h2>
+            <div class="question">
+                <label>1. I feel energized by spending time with others.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I prefer to work in groups rather than alone.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I find social gatherings exhausting and prefer quiet time.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I am usually the one to initiate conversations.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I often reflect on my thoughts and feelings.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="eo5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="eo5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="eo5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="eo5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="eo5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Information Processing (IP) -->
+        <div class="question-group">
+            <h2>Information Processing (IP)</h2>
+            <div class="question">
+                <label>1. I prefer to focus on the facts and details.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I enoy exploring ideas and possibilities.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I trust my experience over theoretical knowledge.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I often look for patterns and meanings beyond the obvious.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I rely on my five senses to understand the world.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="ip5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="ip5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="ip5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="ip5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="ip5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Decision Making (DM) -->
+        <div class="question-group">
+            <h2>Decision Making (DM)</h2>
+            <div class="question">
+                <label>1. I make decisions based on logic and analysis.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I consider others' feelings when making decisions.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I prefer making decisions quickly.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I seek consensus and harmony when making decisions.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I prioritize objective criteria over personal values in decision making.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="dm5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="dm5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="dm5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="dm5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="dm5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Lifestyle Preference (LP) -->
+        <div class="question-group">
+            <h2>Lifestyle Preference (LP)</h2>
+            <div class="question">
+                <label>1. I prefer a structured and organized lifestyle.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp1" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp1" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp1" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp1" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp1" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>2. I am comfortable with last-minute changes and spontaneity.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp2" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp2" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp2" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp2" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp2" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>3. I prefer to keep my options open rather than make a decision quickly.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp3" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp3" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp3" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp3" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp3" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>4. I like to plan my activities in advance.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp4" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp4" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp4" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp4" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp4" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+            <div class="question">
+                <label>5. I thrive in an environment with clear rules and guidelines.</label>
+                <ul class="likert-scale">
+                    <li><button type="button" name="lp5" value="Strongly Disagree">Strongly Disagree</button></li>
+                    <li><button type="button" name="lp5" value="Disagree">Disagree</button></li>
+                    <li><button type="button" name="lp5" value="Neutral">Neutral</button></li>
+                    <li><button type="button" name="lp5" value="Agree">Agree</button></li>
+                    <li><button type="button" name="lp5" value="Strongly Agree">Strongly Agree</button></li>
+                </ul>
+                <p class="error-message"></p>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button[name]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.name;
+                    const value = this.value;
+                    const form = document.getElementById('personalityForm');
+                    const input = form.querySelector(`input[name="${name}"]`);
+                    
+                    if (!input) {
+                        const newInput = document.createElement('input');
+                        newInput.type = 'hidden';
+                        newInput.name = name;
+                        newInput.value = value;
+                        form.appendChild(newInput);
+                    } else {
+                        input.value = value;
+                    }
+                });
+            });
+        });
+
+        function toggleHelpBox() {
+            const helpBox = document.getElementById('helpBox');
+            if (helpBox) {
+                helpBox.classList.toggle('hidden');
+            } else {
+                console.error('Help box element not found');
+            }
+        }
+    </script>
+</body>
+</html>

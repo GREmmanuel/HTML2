@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Test Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Personality Test Results</h1>
+    </header>
+    <div id="results">
+        <h2>Your Results</h2>
+        <div id="resultContent"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultContent = document.getElementById('resultContent');
+            const formData = JSON.parse(localStorage.getItem('formData'));
+
+            if (!formData) {
+                resultContent.innerHTML = "<p>No results found.</p>";
+                return;
+            }
+
+            let resultsHtml = '<ul>';
+            for (const [question, answer] of Object.entries(formData)) {
+                resultsHtml += `<li>${question}: ${answer}</li>`;
+            }
+            resultsHtml += '</ul>';
+
+            resultContent.innerHTML = resultsHtml;
+        });
+    </script>
+</body>
+</html>
